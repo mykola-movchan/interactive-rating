@@ -1,0 +1,120 @@
+:root {
+    --orange-500: hsl(25, 97%, 53%);
+    --white: hsl(0, 100%, 100%);
+    --grey-500: hsl(217, 12%, 63%);
+    --grey-900: hsl(213, 19%, 18%);
+    --grey-950: hsl(216, 12%, 8%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--grey-950);
+    min-height: 100dvh;
+    display: grid;
+    place-items: center;
+}
+
+.card {
+    background-color: var(--grey-900);
+    max-width: 350px;
+    padding: 2em;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 1.5em;
+}
+
+main img {
+    padding: 1em;
+    border-radius: 50%;
+    background-color: hsla(217, 12%, 63%, 0.221);
+}
+
+.card h1 {
+    color: var(--white);
+    font-size: 2rem;
+}
+
+.card p {
+    color: var(--grey-500);
+    line-height: 1.5;
+}
+
+.buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.buttons button {
+    width: 40px;
+    aspect-ratio: 1;
+    border: none;
+    padding: 1em;
+    border-radius: 50%;
+    background-color: hsla(217, 12%, 63%, 0.221);
+    color: var(--grey-500);
+    transition: 0.5s;
+}
+
+.submit {
+    border-radius: 32px;
+    width: 100%;
+    color: var(--grey-950);
+    background-color: var(--orange-500);
+    padding-block: 1em;
+    border: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    transition: 0.5s;
+}
+
+.buttons button:hover,
+.submit:hover {
+    background-color: var(--orange-500);
+    color: var(--grey-950);
+}
+
+.buttons button:active,
+.submit:active {
+    background-color: var(--white);
+    color: var(--grey-950);
+}
+
+.thank-you {
+    display: none;
+    align-items: center;
+}
+
+.thank-you h4 {
+    background-color: hsla(217, 12%, 63%, 0.221);
+    color: var(--orange-500);
+    border-radius: 32px;
+    padding: 0.7em 1em;
+}
+
+.thank-you p {
+    text-align: center;
+}
+
+.overpass-400 {
+  font-family: "Overpass", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.overpass-700 {
+  font-family: "Overpass", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
