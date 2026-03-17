@@ -21,11 +21,11 @@
     to help us improve our offering!</p>
     
     <section class="buttons">
-      <button>1</button>
-      <button>2</button>
-      <button>3</button>
-      <button>4</button>
-      <button>5</button>
+      <button data-score="1">1</button>
+      <button data-score="2">2</button>
+      <button data-score="3">3</button>
+      <button data-score="4">4</button>
+      <button data-score="5">5</button>
     </section>
 
     <button class="submit overpass-700">Submit</button>
@@ -36,13 +36,15 @@
   <section class="thank-you card">
     <img src="images/illustration-thank-you.svg" alt="">
 
-    <h4 class="overpass-700">You selected <span id="score"></span> out of 5</h4>
+    <h4 class="overpass-700">You selected <span id="score-display"></span> out of 5</h4>
 
     <h1>Thank you!</h1>
 
     <p>We appreciate you taking the time to give a rating. If you ever need more support, 
     don’t hesitate to get in touch!</p>
   </section> 
+
+  <div id="popover" popover="manual">You will come back to initial page in 5 seconds</div>
 
 <script src="index.js"></script>
 </body>
